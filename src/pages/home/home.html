@@ -1,14 +1,54 @@
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			MENU
+		</ion-title>
+	</ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+	<div>
+		<ion-grid>
+			<ion-row>
+				<ion-col class="col-utama" (click)="onLoadMateri()">
+					<div class="gambar-menu">
+						<img src="assets/img/1.png" alt="">
+					</div>
+					<p class="title">MATERI</p>
+					<p class="desc">Materi - materi pilihan</p>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12  class="col-utama" (click)="onLoadQuiz()">
+					<div class="gambar-menu">
+						<img src="assets/img/2.png" alt="">
+					</div>
+					<p class="title">QUIZ</p>
+					<p class="desc">Uji seberapa jauh kemampuan mu disini</p>
+				</ion-col>
+			</ion-row>  
+
+			<ion-row> 
+				<ion-col col-12  class="col-utama" (click)="onLoadProfile()">
+					<div class="gambar-menu">
+						<img src="assets/img/3.png" alt="">
+					</div>
+					<p class="title">PROFILE</p>
+					<p class="desc">Atur profil kamu disini<p>
+					</ion-col>
+				</ion-row>    
+
+				<ion-row>
+					<ion-col col-12  class="col-utama" (click)="onLoadAbout()">
+						<div class="gambar-menu">
+							<img src="assets/img/3.png" alt="">
+						</div>
+						<p class="title">TENTANG KAMI</p>
+						<p class="desc">Seputar tentang pembuat aplikasi EIS Fisika</p>
+					</ion-col>
+				</ion-row>
+			</ion-grid> 
+
+		</div>
+
+	</ion-content>
